@@ -9,7 +9,7 @@ export const textState = atom({
 });
 
 function App() {
-  const [text, setText] = useRecoilState();
+  const [text, setText] = useRecoilState(textState);
   return (
     <div>
       <TextInput />
