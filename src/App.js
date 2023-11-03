@@ -11,6 +11,8 @@ export const charCountState = selector({
   key: "charCountState",
   get: ({ get }) => {
     const test = get(textState);
+
+    return test.length;
   },
 });
 
