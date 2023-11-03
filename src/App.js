@@ -1,4 +1,4 @@
-import { atom, useRecoilState } from "recoil";
+import { atom } from "recoil";
 import "./App.css";
 import TextInput from "./components/TextInput";
 import CharacterCount from "./components/CharacterCount";
@@ -9,7 +9,6 @@ export const textState = atom({
 });
 
 function App() {
-  const [text, setText] = useRecoilState(textState);
   return (
     <div>
       <TextInput />
